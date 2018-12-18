@@ -29,8 +29,33 @@
 	<link rel = "icon" href = "assets/images/favicon.png"</link>
 
 	<!-- link to fontawesome-->
-	<!-- <script src="https://use.fontawesome.com/a891bb0a11.js"></script> -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- Adding js -->
+    <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script>
+        function showImages(el) {
+            var windowHeight = jQuery( window ).height();
+            $(el).each(function(){
+                var thisPos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (topOfWindow + windowHeight - 200 > thisPos ) {
+                    $(this).addClass("fadeIn");
+                }
+            });
+        }
+
+        // if the image in the window of browser when the page is loaded, show that image
+        $(document).ready(function(){
+                showImages('.star');
+        });
+
+        // if the image in the window of browser when scrolling the page, show that image
+        $(window).scroll(function() {
+                showImages('.star');
+        });
+    </script>
 </head>
 
 <body>
@@ -100,8 +125,8 @@
 		<div class="spacing">
 			<h8 class="maintitle_red">MY PERSONAL PROJECT</h8>
     		<h2 id="projecttitle">Delishess</h2>
-    		<p>I was challenged to design a home page that contains parallax and continuous scroll. It needed to showcase a hero, image gallery, map, and the ability to subscribe. The website template was also designed to be meant for an American Diner. This template is also designed to accommodate any sort requests and changes by the client.</p>
-    		<img class="img-responsive" src="ra_assets/delishessmockup.png" width="100%">
+    		<p id="test">I was challenged to design a home page that contains parallax and continuous scroll. It needed to showcase a hero, image gallery, map, and the ability to subscribe. The website template was also designed to be meant for an American Diner. This template is also designed to accommodate any sort requests and changes by the client.</p>
+    		<img class="img-responsive star" src="ra_assets/delishessmockup.png" width="100%">
     	</div>
     	<div class="spacing">
     		<div class="row">
@@ -114,31 +139,31 @@
 		    		<p>1. Website is responsive<br>2. Sleek & simple design that goes with branding<br>3. Features menu page that can hold many menu items</p>
 	    		</div>
 	    		<div class="col-sm">
-	    			<img class="img-responsive" src="ra_assets/delishess_wireframes.png" width="130%">
+	    			<img class="img-responsive star" src="ra_assets/delishess_wireframes.png" width="130%">
 	    		</div>
 	    	</div>
     	</div>
     	<div class="spacing p_center">
     		<h8 class="maintitle_red">HOME PAGE</h8>
-    		<img class="img-responsive" src="ra_assets/delishess_desktop_home.png" width="100%">
+    		<img class="img-responsive star" src="ra_assets/delishess_desktop_home.png" width="100%">
     	</div>
     	<div class="between_spacing p_center">
     		<h8 class="maintitle_red">RESTAURANT MENU</h8>
-    		<img class="img-responsive" src="ra_assets/delishess_menudesktop.png" width="100%">
+    		<img class="img-responsive star" src="ra_assets/delishess_menudesktop.png" width="100%">
     	</div>
     	<div class="between_spacing p_center">
     		<h8 class="maintitle_red">MOBILE SCREENS</h8>
-    		<img class="img-responsive between_spacing" src="ra_assets/delishess_mobile_mockup.png" width="100%">
+    		<img class="img-responsive between_spacing star" src="ra_assets/delishess_mobile_mockup.png" width="100%">
     	</div>
     	<div class="spacing">
     		<h2 id="projecttitle">Lexint Law</h2>
     		<p>I created a style guide and a home page mockup for one of RA’s clients. The client bought an existing template, and I used inspect element to replicate the template onto Adobe XD. After that, I gathered image assets and created a color scheme to match their branding.</p>
-    		<img class="img-responsive" src="ra_assets/lexintlaw_image.png" width="100%">
+    		<img class="img-responsive star" src="ra_assets/lexintlaw_image.png" width="100%">
     	</div>
     	<div class="spacing">
     		<h2 id="projecttitle">88 Keys</h2>
     		<p>This was a challenge to create because the client originally had a lot of information to organize. The information architecture of this project was difficult to build a hierarchy of the client’s data. I was able to break down and visualize the information into tables and categories to design a elegant and sleek website.</p>
-    		<img class="img-responsive" src="ra_assets/88keys_mockups.png" width="100%">
+    		<img class="img-responsive star" src="ra_assets/88keys_mockups.png" width="100%">
     	</div>
     	<div class="spacing">
     		<h8 class="maintitle_red">GRAPHIC DESIGN</h8>
@@ -148,106 +173,106 @@
 
     	<div class="row spacing">
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/2ndLove_4thOfJuly_Mock01.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/2ndLove_4thOfJuly_Mock01.jpg" width="100%">
     		</div>
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/Alegria-Fathers-Day1.jpg" width="100%">
-    		</div>
-    	</div>
-    	<div class="row between_spacing">
-    		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/Alegria-Graduation2.jpg" width="100%">
-    		</div>
-    		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/Hopwoo-Fathers-day-2.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/Alegria-Fathers-Day1.jpg" width="100%">
     		</div>
     	</div>
     	<div class="row between_spacing">
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/When_is_it_time_to_Redesdign_byTina.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/Alegria-Graduation2.jpg" width="100%">
+    		</div>
+    		<div class="col-sm">
+    			<img class="img-responsive star" src="ra_assets/Hopwoo-Fathers-day-2.jpg" width="100%">
     		</div>
     	</div>
     	<div class="row between_spacing">
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/Rose-Palette2.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/When_is_it_time_to_Redesdign_byTina.jpg" width="100%">
+    		</div>
+    	</div>
+    	<div class="row between_spacing">
+    		<div class="col-sm">
+    			<img class="img-responsive star" src="ra_assets/Rose-Palette2.jpg" width="100%">
     		</div>
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/skylarlunar.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/skylarlunar.jpg" width="100%">
     		</div>
     	</div>
 		<div class="row between_spacing">
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/HopWoo_Fathersday01.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/HopWoo_Fathersday01.jpg" width="100%">
     		</div>
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/rastat5_skylar.jpg" width="100%">
-    		</div>
-    	</div>
-    	<div class="row between_spacing">
-    		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/GDPR-graphic.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/rastat5_skylar.jpg" width="100%">
     		</div>
     	</div>
     	<div class="row between_spacing">
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/Alegria-Beach-Sandals2.jpg" width="100%">
-    		</div>
-    		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/july4-Alegria.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/GDPR-graphic.jpg" width="100%">
     		</div>
     	</div>
     	<div class="row between_spacing">
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/Rose-Palette(1).jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/Alegria-Beach-Sandals2.jpg" width="100%">
     		</div>
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/Selfie-Giveaway1.jpg" width="100%">
-    		</div>
-    	</div>
-    	<div class="row between_spacing">
-    		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/When_is_it_time_to_Redesign_byTina2.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/july4-Alegria.jpg" width="100%">
     		</div>
     	</div>
     	<div class="row between_spacing">
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/Pex-statistic2.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/Rose-Palette(1).jpg" width="100%">
     		</div>
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/rastat_88keys.jpg" width="100%">
-    		</div>
-    	</div>
-    	<div class="row between_spacing">
-    		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/rastat3.jpg" width="100%">
-    		</div>
-    		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/Pex-statistic1.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/Selfie-Giveaway1.jpg" width="100%">
     		</div>
     	</div>
     	<div class="row between_spacing">
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/Holiday-Blog-Checklist-1.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/When_is_it_time_to_Redesign_byTina2.jpg" width="100%">
     		</div>
     	</div>
     	<div class="row between_spacing">
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/RA_TaxRuling_Mock2.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/Pex-statistic2.jpg" width="100%">
+    		</div>
+    		<div class="col-sm">
+    			<img class="img-responsive star" src="ra_assets/rastat_88keys.jpg" width="100%">
     		</div>
     	</div>
     	<div class="row between_spacing">
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/GDPR-Graphic2.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/rastat3.jpg" width="100%">
+    		</div>
+    		<div class="col-sm">
+    			<img class="img-responsive star" src="ra_assets/Pex-statistic1.jpg" width="100%">
     		</div>
     	</div>
     	<div class="row between_spacing">
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/Holiday-Blog-Checklist.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/Holiday-Blog-Checklist-1.jpg" width="100%">
+    		</div>
+    	</div>
+    	<div class="row between_spacing">
+    		<div class="col-sm">
+    			<img class="img-responsive star" src="ra_assets/RA_TaxRuling_Mock2.jpg" width="100%">
+    		</div>
+    	</div>
+    	<div class="row between_spacing">
+    		<div class="col-sm">
+    			<img class="img-responsive star" src="ra_assets/GDPR-Graphic2.jpg" width="100%">
+    		</div>
+    	</div>
+    	<div class="row between_spacing">
+    		<div class="col-sm">
+    			<img class="img-responsive star" src="ra_assets/Holiday-Blog-Checklist.jpg" width="100%">
     		</div>
     	</div>
      	<div class="row between_spacing">
     		<div class="col-sm">
-    			<img class="img-responsive" src="ra_assets/RAblog_facebookM1.jpg" width="100%">
+    			<img class="img-responsive star" src="ra_assets/RAblog_facebookM1.jpg" width="100%">
     		</div>
     	</div>
     	<!-- Ending -->

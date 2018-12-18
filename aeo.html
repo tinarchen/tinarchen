@@ -29,8 +29,34 @@
 	<link rel = "icon" href = "assets/images/favicon.png"</link>
 
 	<!-- link to fontawesome-->
-	<!-- <script src="https://use.fontawesome.com/a891bb0a11.js"></script> -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- Adding js -->
+	<script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script>
+	  function showImages(el) {
+	      var windowHeight = jQuery( window ).height();
+	      $(el).each(function(){
+	          var thisPos = $(this).offset().top;
+
+	          var topOfWindow = $(window).scrollTop();
+	          if (topOfWindow + windowHeight - 200 > thisPos ) {
+	              $(this).addClass("fadeIn");
+	          }
+	      });
+	  }
+
+	  // if the image in the window of browser when the page is loaded, show that image
+	  $(document).ready(function(){
+	          showImages('.star');
+	  });
+
+	  // if the image in the window of browser when scrolling the page, show that image
+	  $(window).scroll(function() {
+	          showImages('.star');
+	  });
+	</script>
+
 </head>
 
 <body>
@@ -102,7 +128,7 @@
 
 	<div class="container">
 		<!-- Project challenge-->	
-		<div class="proj_challenge">
+		<div class="proj_challenge star">
 			<div class="background" style="background-image: url(assets/question.png)">
 				<div class="centered">
 				  	<h2 class="head_h3"c>The Challenge</h2>
@@ -122,7 +148,7 @@
 				    </div>
 				  </div>
 				  <div class="col-sm img-container">
-				    <img class="img-responsive" src="assets/StyleLab_withContext_2.png" width="100%" height="auto">
+				    <img class="img-responsive star" src="assets/StyleLab_withContext_2.png" width="100%" height="auto">
 				  </div>
 				</div>
 				</a>
@@ -131,7 +157,7 @@
 				<a class="project" id="my-work">
 				<div class="row">
 				  <div class="col-sm">
-				    <img class="img-responsive" src="assets/StyleLab_2D_3.png" width="100%" height="auto">
+				    <img class="img-responsive star" src="assets/StyleLab_2D_3.png" width="100%" height="auto">
 				  </div><div class="col text-container">
 				    <div class="project_p">
 				    	<h8 class="maintitle">REUSE & UTLIZE</h8>
@@ -199,7 +225,7 @@
 			<div class="spacing">
 				<h3 class="sstitle_left">Survey Results</h3>
 				<p>Furthermore, we conducted a survey to see if there were any commonalities between a variety of shopper’s experiences.</p>
-				<img class="img-responsive" src="assets/surveyresults.png" width="60%" height="auto">
+				<img class="img-responsive star" src="assets/surveyresults.png" width="60%" height="auto">
 			</div>
 
 			<!-- Set Factors -->
@@ -230,15 +256,15 @@
 				<div class="img_opportunities">
 					<div class="row">
 					  <div class="col-sm">
-					  	<img class="img-responsive" src="assets/bars.png" height="200" width="auto">
+					  	<img class="img-responsive star" src="assets/bars.png" height="200" width="auto">
 					  	<p>Utilize data to better assist with styling.</p>
 					  </div>
 					  <div class="col-sm">
-					  	<img class="img-responsive" src="assets/clothes.png" height="200" width="auto">
+					  	<img class="img-responsive star" src="assets/clothes.png" height="200" width="auto">
 					  	<p>Provide a personalized service to help with style and fit.</p>
 					  </div>
 					  <div class="col-sm">
-					  	<img class="img-responsive" src="assets/stylerec.png" height="200" width="auto">
+					  	<img class="img-responsive star" src="assets/stylerec.png" height="200" width="auto">
 					  	<p>Use a system that makes better styling recommendations</p>
 					  </div>
 					</div>
@@ -254,13 +280,13 @@
 				<h3 class="maintitle">PRIMARY MODELS</h3>
 				<div class="row">
 					<div class="col-sm">
-						<h2 id="projecttitle">Service Blueprint</h2>
-						<img class="img-responsive" id="centerimg" src="assets/aeserviceblueprint.jpg" width="100%" height="auto">
+						<h2 id="projecttitle">Service Blueprint Sketch</h2>
+						<img class="img-responsive star" id="centerimg" src="assets/aeserviceblueprint.jpg" width="100%" height="auto">
 					</div>
 					<div class="col-sm">
 						<h2 id="projecttitle">Customer Journey Map</h2>
-						<img class="img-responsive" d="centerimg"i src="assets/Customerjourney_instore.png" width="100%" height="auto">
-						<img class="img-responsive" id="centerimg" src="assets/chainofoversight.png" width="100%" height="auto">
+						<img class="img-responsive star" d="centerimg"i src="assets/Customerjourney_instore.png" width="100%" height="auto">
+						<img class="img-responsive star" id="centerimg" src="assets/chainofoversight.png" width="100%" height="auto">
 					</div>
 				</div>
 
@@ -268,7 +294,7 @@
 				<h3 class="maintitle">PERSONA</h3>
 				<h2 id="projecttitle">Guiding Our Design with Persona</h2>
 				<p>We created a persona based on AEO's demographic and identified her needs and pain points:</p>
-				<img class="img-responsive" id="centerimg" src="assets/cheyvaldez.png" width="100%" height="auto">
+				<img class="img-responsive star" id="centerimg" src="assets/cheyvaldez.png" width="100%" height="auto">
 			</div>
 			</div>
 			<div class="spacing">
@@ -279,13 +305,13 @@
 				<div class="spacing">
 					<div class="row">
 						<div class="col-sm">
-							<img class="img-responsive" src="assets/step1.jpg" width="90%" height="auto">
+							<img class="img-responsive star" src="assets/step1.jpg" width="90%" height="auto">
 						</div>
 						<div class="col-sm">
-							<img class="img-responsive" src="assets/step2.jpg" width="90%" height="auto">
+							<img class="img-responsive star" src="assets/step2.jpg" width="90%" height="auto">
 						</div>
 						<div class="col-sm">
-							<img class="img-responsive" src="assets/step3.jpg" width="90%" height="auto">
+							<img class="img-responsive star" src="assets/step3.jpg" width="90%" height="auto">
 						</div>
 					</div>					
 				</div>
@@ -309,73 +335,118 @@
 
 			<div class="spacing">
 				<h3 class="maintitle">SPEED DATING</h3>
-				<h2 id="projecttitle">We Discovered a Few Flaws</h2>
-				<p>18 people: 12 of which are AEO shoppers and 6 people with retail experience</p>
+				<h2 id="projecttitle">Because of our findings, we felt compelled to change direction.</h2>
 				<div class="centerpart-container">
 					<ul class="bullet">
 						<li>We found that though most are excited about styling for the right size/colors/fit, the associates or ambassadors lacked <strong>credibility. They trust their friends instead.</strong></li>
 						<li>People also may interpret associate’s help as <strong>intrusion</strong>, or being “sold to”.</li>
 						<li>Most appreciate the accessory wall (concept 5) especially when shopping for jeans, to be exposed to <strong>complimentary items.</strong></li>
+						<li>Satisfactory suggestions for styles could build credibility</li>
 					</ul>
 				</div>
 				<img class="img-responsive" id="centerimg" src="assets/ae_storyboards/ae_speeddating.png" width="80%" height="auto">
 			</div>
+			<div class="spacing narrow">
+				<h3 class="maintitle">FINAL STEPS</h3>
+				<h2 id="projecttitle">Pivoting to Our Final Design<h2>
+				<h5>. . . One More Storyboard</h5>
+				<p>Since associates were deemed to lack credibility, we determined that self styling was the answer. I speed dated one more storyboard to validate this.<br><br> A lot of people loved this idea, but wanted to know if it could include multiple people- <strong>family & friends.</strong></p>
+				<h4>Concept 6: Designated Space for Accessory and Styling</h4>
+				<img class="img-responsive star" src="assets/ae_storyboards/ss_carousel.jpg" width="110%" height="auto">
+			</div>
 		</div>
 	</div>
 
-			<div class="research">
-				<div class="researchdiv">
-					<h3 class="maintitle">FINAL STEPS</h3>
-					<h2 id="projecttitle">Pivoting to Our Final Design</h2>
-					<div class="row">
-						<div class="col-sm col-with-text">
-							<div class="col-content">
-								<h5>. . . One More Storyboard</h5>
-								<p>Since associates were deemed to lack credibility, we determined that self styling was the answer. I speed dated one more storyboard to validate this.<br><br> A lot of people loved this idea, but wanted to know if it could include multiple people- <strong>family & friends.</strong></p>
-							</div>
-						</div>
-						<div class="col-sm">
-							<h4>Concept 6: Designated Space for Accessory and Styling</h4>
-							<img class="img-responsive" src="assets/ae_storyboards/ss_carousel.jpg" width="110%" height="auto">
+	<div class="research">
+		<div class="researchdiv">
+			<div class="spacing">
+				<h3 class="maintitle">OUR SOLUTION</h3>
+				<h2 id="projecttitle">AE CO-LAB</h2>
+				<img class="img-responsive star" src="assets/StyleLab_withContext_2.png" width="100%" height="auto">
+				<div class="row">
+					<div class="col-sm col-with-text">
+						<div class="col-content">
+							<h3 class="maintitle">DESIGN CONSIDERATIONS</h3>
+							<h2 id="projecttitle">Interactive Digital Display</h2>
+							<ul>
+								<li>Scan product to see how it will look with other accessories</li>
+								<li>Simple swipe motion to look through different AEO products</li>
+								<li>Contains both online and in store products</li>
+								<li>Sales Associate can help with finding products in store or ordering online</li>
+							</ul>
 						</div>
 					</div>
-					<div class="spacing">
-						<h3 class="maintitle">OUR SOLUTION</h3>
-						<h2 id="projecttitle">AE CO-LAB</h2>
-						<img class="img-responsive" src="assets/StyleLab_withContext_2.png" width="100%" height="auto">
-						<div class="row">
-							<div class="col-sm col-with-text">
-								<div class="col-content">
-									<h3 class="maintitle">VALUE PROPOSITIONS</h3>
-									<h6 class="subtitle between_spacing">Encouraging the purchase of more accessories</h6>
-									<p>It is ultimately AEO’s goal to sell more and increase revenue. They are a leader in selling jeans, so we thought why can’t they be a leader in selling accessories?<br><br>The lab includes a digital touchscreen in which friends could help accessorize their other friend while they wait for them.</p>
-									<h6 class="subtitle">Customer Aquisition</h6>
-									<p>With a space meant for friends, AEO’s already loyal customers can bring in their friends to also join in on the fun.</p>
-									<h6 class="subtitle">Exposure and Effective Styling</h6>
-									<p>With a space meant for friends, AEO’s already loyal customers can bring in their friends to also join in on the fun.</p>
-									<h6 class="subtitle">Styling is a vehicle for driving revenue</h6>
-									<p>Styling means people look better more often, purchase more accessories to style better, and in return brings value to AEO.</p>
-								</div>
-							</div>
-							<div class="col-sm">
-			               		<iframe class="hidden-xs"width="100%" height="800" src="https://invis.io/U9PEF3W87RC" frameborder="0" allowfullscreen></iframe>
-			               		<p class="hidden-lg hidden-md hidden-sm">If the embedded prototype doesn't show up normally on mobile devices, please view it <a  href="https://invis.io/U9PEF3W87RC">here</a>.</p>
-							</div>
-						</div>	
-					</div>
-					
-					<div class="spacing">
-						<h3 class="maintitle">WHAT I LEARNED</h3>
-						<h2 id="projecttitle">It's Okay To Change Our Design</h2>
-						<p>Our group was constantly switching back and forth several ideas. It was a lot of digging deep into what it actually means to co-create value for AEO and their customers. We went through many iterations and ideas, some that even started as a joke and flourished into our design!</p>
-						<ul class="bullet">
-							<li>Fail faster to discard bad ideas earlier and gain better ideas later!</li>
-							<li>Don’t be afraid to go to people and ask for their time, they give pretty good insights.</li>
-							<li>Designs and ideas will switch a lot. I guess it's all part of the process!</li>
-						</ul>
+					<div class="col-sm">
+	               		<iframe class="hidden-xs"width="100%" height="800" src="https://invis.io/U9PEF3W87RC" frameborder="0" allowfullscreen></iframe>
+	               		<p class="hidden-lg hidden-md hidden-sm">If the embedded prototype doesn't show up normally on mobile devices, please view it <a  href="https://invis.io/U9PEF3W87RC">here</a>.</p>
 					</div>
 				</div>
+
+				<div class="row">
+					<div class="col-sm">
+	               		<img class="img-responsive star" src="assets/aexme.jpg" width="90%">
+					</div>
+					<div class="col-sm col-with-text">
+						<div class="col-content">
+							<h3 class="maintitle">MARKETING STRATEGY</h3>
+							<h2 id="projecttitle">AE x ME Campaign</h2>
+							<ul>
+								<li>AE x ME campaign integration, images featured are pulled from posts using the #AE x ME hashtag</li>
+								<li>Digital lookbook with social media influencers</li>
+								<li>Let customers find inspiration from others</li>
+								<li>Allow customers to participate with hashtag as well</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+      			<div class="spacing">
+        			<h3 class="maintitle">SERVICE BLUEPRINT</h3>
+        			<h2 id="projecttitle">What We Want Our Design to Look Like</h2>
+        			<img class="img-responsive star" src="assets/serviceblueprint.png" width="100%">
+      			</div>
+      				
+      			<div class="spacing">
+					<h3 class="maintitle">VALUE PROPOSITION</h3>
+					<h2 id="projecttitle">Encouraging the Purchase of More Accessories<h2>
+					<p>It is ultimately AEO’s goal to sell more and increase revenue. They are a leader in selling jeans, so we thought why can’t they be a leader in selling accessories?<br><br>According to Statistical Portal, revenue in the Accessories market amounts to US$57,909m in 2018. The market is expected to still grow annually by 1.6% (CAGR 2018-2021). Currently, AEO has been a market lead in selling jeans, but perhaps not doing as well in selling accessories and styling, and there is a huge, untapped resource, which is the social shopper. Therefore, our vision is to facilitate those co-shoppers as a styling guide for their friends.</p>
+					<h2 id="projecttitle">Customer Aquisition<h2>
+					<p>Let loyal AEO customers bring their friends and family into the stores, convert them into loyal customers as well</p>
+					<h2 id="projecttitle">Exposure and Effective Styling<h2>
+					<p>1. Try new things without feeling like you are being sold to by an associate<br>2. Explore without limitation<br>3. Get inspiration from others like you on the display</p>
+					<h2 id="projecttitle">Styling is a Vehicle for Driving Revenue<h2>
+					<p>1. More products like accessories sold means more revenue for AEO<br>2. Help Sales Associates meet their sale quota</p>
+      			</div>
 			</div>
+		</div>
+	</div>
+
+	<div class="container spacing narrow">
+		<h3 class="maintitle">PITCH OUTCOMES</h3>
+		<h2 id="projecttitle">Exposure to Accessories<h2>
+		<p>We had designers, managers, and associates from AEO come hear what we had created. We got an overwhelming number of positive feedback and appreciation for our idea! To take this to the next step, the AE CO-LAB could become integrated with their mobile app or even be in other locations in the store.</p>
+		<div class="row">
+			<div class="col-sm">
+				<img class="img-responsive star" src="assets/pitch1.jpg" width="100%">
+			</div>
+			<div class="col-sm">
+				<img class="img-responsive star" src="assets/pitch2.jpg" width="100%">
+			</div>
+		</div>
+	</div>
+
+	<div class="research">
+		<div class="researchdiv">
+			<h3 class="maintitle">WHAT I LEARNED</h3>
+			<h2 id="projecttitle">It's Okay To Change Our Design</h2>
+			<p>Our group was constantly switching back and forth several ideas. It was a lot of digging deep into what it actually means to co-create value for AEO and their customers. We went through many iterations and ideas, some that even started as a joke and flourished into our design!</p>
+			<ul class="bullet">
+				<li>Fail faster to discard bad ideas earlier and gain better ideas later!</li>
+				<li>Don’t be afraid to go to people and ask for their time, they give pretty good insights.</li>
+				<li>Designs and ideas will switch a lot. I guess it's all part of the process!</li>
+			</ul>
+		</div>
+	</div>
 
 	<div class="container">
 		<div class="back between_spacing">

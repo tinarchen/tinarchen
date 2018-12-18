@@ -45,8 +45,9 @@ ul {
 
 li {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 2;
+	color: #656565;
 }
 
 /*TITLE STYLING*/
@@ -372,6 +373,7 @@ a.projectintro {
 
 .research {
 	background-color: #F5F5F5;
+	margin-top: 4rem;
 }
 
 .researchdiv {
@@ -490,4 +492,18 @@ a.projectintro {
 	width: 100%;
 }
 
+/* ANIMATE IMAGES*/
+.star {
+    visibility: hidden;
+}
 
+.fadeIn {
+    -webkit-animation: animat_show 0.8s;
+    animation: animat_show 0.8s;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
+}
