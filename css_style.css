@@ -1,3 +1,4 @@
+/*STYLING FOR ALL PAGES*/
 body{
 	font-family: "Poppins";
 }
@@ -42,6 +43,13 @@ ul {
 	padding-left: 0;
 }
 
+li {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+}
+
+/*TITLE STYLING*/
 .stakeholders {
 	color:#6fc4b0;
 	text-align: center;
@@ -54,6 +62,13 @@ ul {
 	font-weight: 700;
 }
 
+.maintitle_red {
+	color:#D81F28;
+	font-weight: 700;
+	text-align: center;	
+}
+
+/*PARAGRAPH STYLING*/
 .p_center {
 	text-align: center;
 }
@@ -62,8 +77,7 @@ ul {
 	align-items: center;
 }
 
-/*intro styling*/
-
+/*INTRO STYLING*/
 .intro {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
@@ -84,6 +98,13 @@ ul {
 	font-size: 18px;
 }
 
+.intro .row .col{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+/* ON AND OFF HOVER */
 .special_underline {
 	color:#6fc4b0;
 }
@@ -94,7 +115,7 @@ ul {
 	position: relative;
 }
 
-/* style underline */
+/* UNDERLINE */
 .special_underline:after {
   content: '';
   position: absolute;
@@ -105,12 +126,13 @@ ul {
   width: 0%;
 }
 
-/* animate underline */
+/* ANIMATE UNDERLINE */
 .special_underline:hover:after {
   width: 100%;
   transition: 1s;
 }
 
+/* ANIMATE ARROW*/
 .arrow i{
 	color:black;
 }
@@ -135,17 +157,13 @@ ul {
   animation: bounce 2s infinite;
 }
 
-/*NAVBAR*/
-
+/* NAVBAR STYLING */
 .navbar {
 	margin-top: 1rem;
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
 
-/*.navbar:hover {
-	color:#F7941D !important;
-}*/
 .navbar .navbar-toggler {
 	background: none;
 	border: none;
@@ -169,7 +187,7 @@ ul {
 	font-size: 15px;
 }
 
-/*PROJECTS*/
+/* PROJECTS ON HOME PAGE*/
 
 .project .img-container {
 	height: 500px;
@@ -252,8 +270,7 @@ a.project:hover {
 	float: right;
 }
 
-/*PROJECT PAGES*/
-
+/*PROJECT CONTENT STYLING*/
 .projectintro .img-container {
 	height: 500px;
 	display: flex;
@@ -276,9 +293,7 @@ a.projectintro {
 	color: black;
 }
 
-/*Projects Styling
-*/
-
+/* CHALLENGE TITLE*/
 .head_h3 {
 	font-weight: 700;
 	text-align: center;
@@ -287,18 +302,20 @@ a.projectintro {
 	margin-bottom: 0 !important;
 }
 
+/* PARAGRAPH SPACING*/
 .project_p{
 	padding-top: 1rem;
 	padding-left: 10%;
 }
 
+/* DIFFERENT SECTIONS */
 .projcontainer {
 	background-color: #F5F5F5;
 }
 
 .projdetail {
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 15%;
+	padding-right: 15%;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
@@ -318,20 +335,13 @@ a.projectintro {
 	background-size: 7%;
 }
 
-.text {
-	padding: 0px !important;
-}
-
+/* PRESENTING SOLUTION*/
 .solution {
 	margin-top: 4rem;
 	margin-bottom: 4rem;
 }
 
-li {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	line-height: 2;
-}
+
 
 /*Research Section*/
 .lefttitle {
@@ -376,6 +386,7 @@ li {
 	align-items: center;
 }
 
+/* PADDING FOR ALL PAGES*/
 .spacing {
 	padding-top: 4rem;
 }
@@ -389,16 +400,13 @@ li {
 	padding-right: 15%;
 }
 
-.opportunities {
-	text-align: center;
-	padding-top: 4rem;
-	padding-bottom: 4rem;
-}
+/* OPPORTUNITIES IMG*/
 
 .img_opportunities {
 	padding-top: 2rem;
 }
 
+/* CENTERING*/
 .centerpart-container {
 	display: flex;
 	justify-content: space-around;
@@ -411,6 +419,7 @@ li {
 	font-family: "Poppins";
 }
 
+/* TITLES*/
 .sstitle {
 	font-style: normal;
 	font-weight: 700;
@@ -433,6 +442,7 @@ li {
 	padding-bottom: 0 !important;
 }
 
+/* IMG CENTERING */
 .storyboard {
 	align-items: center;
 }
