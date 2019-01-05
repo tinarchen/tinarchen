@@ -69,6 +69,12 @@ li {
 	text-align: center;	
 }
 
+.maintitle_green {
+	color: #3AB449;
+	font-weight: 700;
+	text-align: center;	
+}
+
 /*PARAGRAPH STYLING*/
 .p_center {
 	text-align: center;
@@ -198,7 +204,7 @@ li {
 }
 
 .homespacing {
-	padding-top: 5rem;
+	padding-bottom: 10%;
 }
 
 .project .text-container {
@@ -223,7 +229,6 @@ a.project:hover {
 #projectlabel {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
-	width: 30rem;
 	color: #6E6E6E;
 }
 
@@ -232,7 +237,6 @@ a.project:hover {
 	font-style:italic;
 	font-size:15px;
 	color: #6E6E6E;
-	padding-top: .3rem;
 	text-align: left;
 }
 
