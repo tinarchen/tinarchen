@@ -34,7 +34,7 @@ h6 {
 }
 
 p {
-	font-size: 15px;
+	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	color: #656565;
 }
@@ -511,3 +511,30 @@ a.projectintro {
     0%{opacity:0}
     100%{opacity:1}
 }
+
+#top {
+	margin-top: 10%;
+}
+/* Highlight Text & Animation*/
+
+/*.highlight {
+	--highlight-walker: #5AD1FF60;
+ 	background-image: linear-gradient(to right, transparent 50%, var(--highlight-walker) 50%);
+	position: relative;
+	background-origin: 0;
+	background-size: 200% 100%;
+	background-repeat: repeat-x;
+	background-position: -100% 100%;
+
+    animation-name: highlight;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes highlight {
+    from {background-position: 0% 0;}
+    to {background-position: -100% 0;}
+}*/
+
