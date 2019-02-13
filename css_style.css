@@ -538,3 +538,8 @@ a.projectintro {
     from {background-position: 0% 0;}
     to {background-position: -100% 0;}
 }
+
+.carousel-caption {
+	background: rgba(0,0,0,0.50);
+}
+
