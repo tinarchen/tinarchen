@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>ESPN | Tina Chen</title>
+
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css_style.css">
+
+  <!-- icon-->
+  <link rel="icon" href="assets/favicon.png"</link>
+
+  <!-- link to fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <!-- font styles -->
+  <link rel="stylesheet" href="https://use.typekit.net/zok7hzk.css">
+  
+  <!-- Adding js -->
+  <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script>
+    function showImages(el) {
+        var windowHeight = jQuery( window ).height();
+        $(el).each(function(){
+            var thisPos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (topOfWindow + windowHeight - 200 > thisPos ) {
+                $(this).addClass("fadeIn");
+            }
+        });
+    }
+
+    // if the image in the window of browser when the page is loaded, show that image
+    $(document).ready(function(){
+            showImages('.star');
+    });
+
+    // if the image in the window of browser when scrolling the page, show that image
+    $(window).scroll(function() {
+            showImages('.star');
+    });
+  </script>
+
+</head>
+
+<body>
+  <div class="container">
+     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand navbar-center" href="index.html">
+        <div class="nav-title">TINA CHEN</div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarsupportcontent">
+          <ul class="navbar-nav flex-column ml-auto mt-2 mt-lg-0">
+            <li class="nav-item nav-item-stick-right ml-auto">
+              <a class="nav-link" href="index.html">Projects</a>
+            </li>
+            <li class="nav-item nav-item-stick-right ml-auto">
+              <a class="nav-link" href="assets/Resume_1211.pdf" target="_blank">Resume</a>
+            </li>
+            <li class="nav-item nav-item-stick-right ml-auto">
+              <a class="nav-link" href="about.html">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>   
+  </div>
+
+  <!-- Project Intro -->  
+  <div class="headers narrow1">
+    <img class="img-responsive" id="centerimg" src="assets/espn_header.png" width="100%">
+  </div>
+
+  <!-- Project content -->
+  <div class="spacing narrow">
+    <div class="work">
+      <h2>Redesign</h2>
+      <h1>ESPN FANTASY FOOTBALL</h1>
+      <p>Winter 2018<br>Personal passion project aimed to research, conceptualize, wireframe, and prototype.</p>
+    </div>   
+
+    <div class="work">
+      <h2>Intro</h2>
+      <h1>How might I create a more informative app but provide a balanced space?</h1>
+      <p>ESPN’s Fantasy App is the #1 app for fantasy football lovers alongside other sports. It updates you on the latest news of players, you can draft and pick players throughout the season.<br><br>Even though it is the #1 app for Fantasy lovers (including myself), I wanted find out how I can improve Fantasy’s usability and enhance the user’s journey.</p>
+    </div>
+
+    <div class="work">
+      <div class="row">
+          <div class="col-lg-6 img-container">
+            <img class="img-responsive star" src="assets/espn_solution1.png" width="100%" height="auto"><br><br>
+          </div>
+          <div class="col-lg-6 text-container star">
+            <p>Pushing the most important visuals up-front.</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-6 img-container">
+            <img class="img-responsive star" src="assets/espn_solution2.png" width="100%" height="auto"><br><br>
+          </div>
+          <div class="col-lg-6 text-container star">
+            <p>Allowing player’s to view big data quickly while also providing them analytical stats that are secondary.</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-6 img-container star">
+            <img class="img-responsive star" src="assets/espn_solution3.png" width="100%" height="auto"><br><br>
+          </div>
+          <div class="col-lg-6 text-container star">
+            <p>Removing text heavy descriptions and replacing it with quick and informative videos and big numbers, instead of long paragraphs.</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-6 img-container star">
+            <img class="img-responsive star" src="assets/espn_solution4.png" width="100%" height="auto">
+          </div>
+          <div class="col-lg-6 text-container star">
+            <p>Simplifying adding/ dropping players with a “Player Match Up Screen” that allows for comparison between players.</p>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="research">
+    <img class="img-responsive start" src="assets/espn_title.png" width="100%" height="auto">
+  </div>
+
+  <div class="spacing narrow">
+    <div class="work">
+      <h2>Final Design and Interactive Prototype</h2>
+      <h1>Player’s Information Before</h1>
+      <p>There are text heavy descriptions and boxed information that makes the space feel small. The user also has to click on the player’s name to access this pop up screen which is extremely long.</p>
+      <img class="img-responsive star" src="assets/playerinfobefore.png" width="100%">
+    </div>
+    <div class="work">
+      <h1>Player’s Information  After</h1>
+      <p>In my modification, you can easily access the player’s info and everything is condensed to the information that is most important when making a decision about benching players. In text heavy areas, I replaced them with recent news videos or big number stats that will pop up for the user.</p>
+      <img class="img-responsive star" src="assets/playerinfo.png" width="100%">
+    </div>
+    <div class="work">
+      <h1>Adding/ Dropping Players Before</h1>
+      <p>With the current screens, it is hard for the user to make comparisons simultaneously between two players.</p>
+      <img class="img-responsive star" src="assets/matchupbefore.png" width="100%">
+    </div>
+    <div class="work">
+      <h1>Adding/ Dropping Players After</h1>
+      <p>To simplify the process of adding/ dropping players to the roster, I added the “Player Match Up Screen”. When the name of the player is picked, instead on their player info screen- you get a comparison between the player you are trying to add and drop. This allows you to see clearly their average points and outlook in Fantasy.<br><br>I still wanted to keep the UI the same, but introduce colors for comparison of the two players. Users can see what the player’s average points, stats, and outlook in order to make their better decisions for adding/ dropping players.</p>
+      <img class="img-responsive star" src="assets/matchup.png" width="100%">
+    </div>
+    <div class="work">
+      <h2>Medium Article</h2>
+      <h1>More Behind my Process</h1>
+      <p>To see my process behind this personal project, please visit my Medium Article <a class="special_underline" href="https://medium.com/@trchen_60055/espn-fantasy-app-a-ux-case-study-2660d86746f3" target="_blank">here</a>.</p>
+      <img>
+    </div>
+    <div class="work">
+      <h1>Live Prototype</h1>
+      <iframe class="hidden-xs"width="100%" height="800" src="https://marvelapp.com/aeicif7" frameborder="0" allowfullscreen></iframe>
+      <p>If the embedded prototype doesn't show up normally on mobile devices, please view it <a href="https://marvelapp.com/aeicif7" target="blank">here</a>.</p>
+    </div>
+    
+  </div>
+
+
+
+  <!-- footer -->
+  <div class="container">
+    <a href="aeo.html" class="special_underline">AEO CO-LAB</a>
+    <a href="ra.html" class="special_underline" id="next">READY ARTWORK</a>
+    <div class="footer">
+        <h4 id="footer_txt">© 2019 Designed and Handcoded with ♡ and 🎵 </h4>
+    </div>
+    <div class="footer-icons">
+        <p>
+          <a href="https://www.linkedin.com/in/tina-chen-b3811a14a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://medium.com/@trchen_60055" target="_blank"><i class="fab fa-medium-m"></i></a>
+          <a href="https://www.instagram.com/art.byrui/" target=_blank"><i class="fas fa-palette"></i></a>
+          <a href="mailto:trchen@andrew.cmu.edu" target="_blank"><i class="fas fa-envelope"></i></a>
+        </p>
+    </div>
+  </div>
+
+</body>
+</html>
