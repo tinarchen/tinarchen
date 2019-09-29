@@ -7,12 +7,12 @@ h1 {
 	font-family: adobe-caslon-pro, serif;
 	font-weight: 400;
 	font-size: 2em;
-	padding-bottom: 30px;
+	padding-bottom: 16px;
 }
 
 h2 {
 	text-transform: uppercase;
-	font-size: 1em;
+	font-size: .8em;
 	color: #969494;
 	padding-bottom: 16px;
 	font-weight: 400;
