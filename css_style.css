@@ -18,6 +18,11 @@ h2 {
 	font-weight: 400;
 }
 
+#headertitle {
+	font-size: 1.5em;
+	line-height: 1.8;
+}
+
 h3 {
 	font-size: .8em;
 	text-transform: uppercase;
@@ -250,6 +255,18 @@ a.nav-link hover{
 	padding-top: 150px;
 }
 
+.header {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 64px;
+}
+
+hr {
+    display: block;
+    border-top: 5px solid #E45F64;
+    margin-right: 90%;
+}
+
 .narrow {
 	padding-left: 25%;
 	padding-right: 25%;
@@ -262,9 +279,6 @@ a.nav-link hover{
 }
 
 #highlight{
-	border-left: 6px solid #000000;
-	padding-left: 28px;
-	margin-bottom: 3rem;
 	font-size: 2.3em;
 	font-weight: 500;
 	text-transform: uppercase;
