@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Resmed: Amelio | Tina Chen</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css_style.css">
+
+  <!-- icon-->
+  <link rel="icon" href="assets/favicon.png"</link>
+
+  <!-- link to fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <!-- font styles -->
+  <link rel="stylesheet" href="https://use.typekit.net/zok7hzk.css">
+  
+  <!-- Adding js -->
+<!--   <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
+  <script>
+    function showImages(el) {
+        var windowHeight = jQuery( window ).height();
+        $(el).each(function(){
+            var thisPos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (topOfWindow + windowHeight - 200 > thisPos ) {
+                $(this).addClass("fadeIn");
+            }
+        });
+    }
+
+    // if the image in the window of browser when the page is loaded, show that image
+    $(document).ready(function(){
+            showImages('.star');
+    });
+
+    // if the image in the window of browser when scrolling the page, show that image
+    $(window).scroll(function() {
+            showImages('.star');
+    });
+  </script>
+
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand navbar-center" href="index.html">
+        <div class="nav-title">TINA CHEN</div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav flex-column ml-auto mt-2 mt-lg-0">
+          <li class="nav-item nav-item-stick-right ml-auto">
+            <a class="nav-link" href="index.html">Projects</a>
+          </li>
+          <li class="nav-item nav-item-stick-right ml-auto">
+            <a class="nav-link" href="assets/Resume_1211.pdf" target="_blank">Resume</a>
+          </li>
+          <li class="nav-item nav-item-stick-right ml-auto">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Project Intro -->  
+  <div class="headers narrow1">
+    <img class="img-responsive" id="centerimg" src="assets/resmed_header.png" width="100%">
+  </div>
+
+  <!-- Project content -->
+  <div class="spacing narrow">
+    <div class="work">
+      <h2>RESMED</h2>
+      <p>Spring 2018<br>Interaction Design Studio II<br>In collaboration with: Alessendra Fleck, Dylan Smith, and Daniela Marmolejos</p>    
+    </div>     
+
+    <div class="work">
+      <h2>INTRODUCTION</h2>
+      <h1>AMELIO</h1>
+      <p>Amelio is a native mobile application that provides patients with support communities while empowering better patient and care giver experiences through capturing real emotional data.</p>
+    </div>
+    <div class="work">
+      <h1>How can we retain value for Resmed through patient data?</h1>
+      <p>50% of home care patients are not compliant to their therapy because of poor provider training and compliance monitoring. We kickstarted the discovery process by running a 2-day research sprint. The goal was to synthesize as much information about ResMed as we could manage.<br><br>Through background research, we found that individuals who suffer from sleep apnea are at risk to develop more severe conditions, such as high blood pressure, heart failure, and depression. It is essential for people with sleep apnea to seek treatment right away. But patients don’t comply, and Resmed can’t understand why.</p>
+    </div>
+  </div>
+
+  <!-- Product -->
+  <div class="research">
+    <div class="researchdiv">
+      <div class="work">
+        <h2>PRODUCT</h2>
+        <h1>Micro Interactions</h1>
+        <h3>Guerrilla Research</h3>
+        <p>Amelio helps the people who use ResMed devices feel like they have a community and that they’re being heard. Through writing about their experiences, both good and bad, on the forum platform, customers can support one another. For the respiratory therapist, they can use the data garnered from the forum to help improve the lives of their patients. ResMed can leverage that real emotional data to generate stronger insights to produce better customer experiences- and better customer experiences translate to better sales and higher quality products and services.</p>
+        <div class="work row">
+          <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+            <img class="img-responsive star" src="assets/victor_view.gif" width="100%">
+          </div>        
+          <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 col-with-text">
+            <h2>Interactions</h2>
+            <h1>Respiratory Therapists</h1>
+            <p>Respiratory therapists are primarily in charge of installing devices for patients and answering any questions the patient might have on usage.  Thus, we created interactions that helped therapists get a holistic sense of the products and patients they are caring for.</p>
+          </div>
+        </div>
+        
+        <img class="img-responsive star work" src="assets/resmed_rt.png" width="100%">  
+        
+        <div class="work row">
+          <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+            <h2>Interactions</h2>
+            <h1>Patient facing</h1>
+            <p>The micro-interactions for the patient were centered around the chat forum. We wanted to create a space that was interactive, inviting and enjoyable for the user.  We also wanted to help patients visualize the variety of conversations in this area to reduce the sense of isolation that they sometimes feel.</p>
+          </div>        
+          <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 col-with-text">
+            <img class="img-responsive star" src="assets/alex_view.gif" width="70%">
+          </div>
+        </div>
+        <img class="img-responsive star work" src="assets/resmed_pt.png" width="100%">
+      </div>
+    </div>     
+  </div>
+
+  <div class="spacing narrow">
+    <div class="work">
+      <h2>DISCOVERY & IDEATION</h2>
+      <h1>Connecting human needs to company goals</h1>
+      <p>With our understanding of the various stakeholders within the ResMed system, we clustered like-entities to organize our research, as well as to pry out some initial insights. From there we did several exercises to broaden our thinking and helped us explore more holistic solutions.</p>
+      <div class="row">
+        <div class="col-lg-6 img-container work">
+          <img class="img-responsive star" src="assets/stakeholdermapping-2.jpg" width="100%" height="auto">
+        </div>
+        <div class="col-lg-6 text-container star">
+          <p>Stakeholder Mapping<br><br>There is little communication or conversation between patients and ResMed.</p>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-6 img-container work">
+            <img class="img-responsive star" src="assets/reverseassumptions-2.jpg" width="100%" height="auto">
+          </div>
+          <div class="col-lg-6 text-container star">
+            <p>Reverse stakeholder assumptions<br><br>We challenged our existing assumptions to generate out-of-the box design ideas.</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-6 img-container star work">
+            <img class="img-responsive star" src="assets/twenty-2.jpg" width="100%" height="auto">
+          </div>
+          <div class="col-lg-6 text-container star">
+            <p>Generate 20 questions for problem framing<br><br>We listed out ideas that could serve a variety of stakeholders.</p>
+          </div>
+      </div>   
+      <div class="work">
+        <h1>Establishing value between domains</h1>
+        <p>Now that we established a basic stakeholder flow, it seemed logical that we also map out value between the domains represented by the delivery and usage of ResMed products.<br><br>Being able to highlight services and agreements also showed where the flow of value was lacking. For instance, there currently exists a weak co-creation value link between patients and the business side, through the basic service provided by RTs. One question we asked is:</p>
+        <h4>How could patients retain a stronger value by transferring their data to ResMed?</h4>  
+        <img class="img-responsive star work" src="assets/concept_digital.png" width="100%">
+      </div>   
+    </div>    
+  </div>
+
+  <div class="research">
+    <div class="researchdiv work">
+      <h1>Deliverable Data</h1>
+      <p>Amelio connect others through the forum platform, gathering data on human feelings and emotions. The respiratory therapist is then able to collect the emotional and empathetic side of data.<br><br>This promotes fostering a greater sense of understanding for the customer, thus allows Resmed to produce better insights and stronger products and services.</p>
+      <img class="img-responsive star work" src="assets/endgoal.png" width="100%">
+    </div>
+  </div>
+  <div class="spacing narrow">
+    <video width="100%" height="auto" controls>
+      <source src="assets/resmed_final.mov">
+    </video>
+  </div>
+
+  <!-- footer -->
+  <div class="container">
+      <a href="adobe.html" class="special_underline">ADOBE</a>
+      <a href="har.html" class="special_underline" id="next">HUMANE ANIMAL RESCUE</a>
+    <div class="footer">
+      <h4 id="footer_txt">© 2019 Designed and Handcoded with ♡ and 🎵 </h4> 
+    </div>
+    <div class="footer-icons">
+      <p>
+        <a href="https://www.linkedin.com/in/tina-chen-b3811a14a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://medium.com/@trchen_60055" target="_blank"><i class="fab fa-medium-m"></i></a>
+        <a href="https://www.instagram.com/art.byrui/" target=_blank"><i class="fas fa-palette"></i></a>
+        <a href="mailto:trchen@andrew.cmu.edu" target="_blank"><i class="fas fa-envelope"></i></a>
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
