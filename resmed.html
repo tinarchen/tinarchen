@@ -1,239 +1,368 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en-US">
 <head>
-  <title>Resmed: Amelio | Tina Chen</title>
-  
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- bootstrap -->
-    <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- DEFAULT META TAGS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    
+    <!-- FONTS -->
+    <link href="http://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet" type="text/css">
+       
+    <!-- CSS -->
+    <link rel="stylesheet" id="default-style-css"  href="files/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="fontawesome-style-css" href="files/css/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="ionic-icons-style-css" href="files/css/ionicons.css" type="text/css" media="all" />
+	<link rel="stylesheet" id="responsive-css"  href="files/css/mqueries.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="files/css/cursor.css">
+	<!-- link to fontawesome-->
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  	<link rel="stylesheet" id="lightcase-css" href="files/css/lightcase.css" type="text/css" media="all" />	
 
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <!-- Popper JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
-  <link rel="stylesheet" href="css_style.css">
-
-  <!-- icon-->
-  <link rel="icon" href="assets/favicon.png"</link>
-
-  <!-- link to fontawesome-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-  <!-- font styles -->
-  <link rel="stylesheet" href="https://use.typekit.net/zok7hzk.css">
-  
-  <!-- Adding js -->
-<!--   <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
-  <script>
-    function showImages(el) {
-        var windowHeight = jQuery( window ).height();
-        $(el).each(function(){
-            var thisPos = $(this).offset().top;
-
-            var topOfWindow = $(window).scrollTop();
-            if (topOfWindow + windowHeight - 200 > thisPos ) {
-                $(this).addClass("fadeIn");
-            }
-        });
-    }
-
-    // if the image in the window of browser when the page is loaded, show that image
-    $(document).ready(function(){
-            showImages('.star');
-    });
-
-    // if the image in the window of browser when scrolling the page, show that image
-    $(window).scroll(function() {
-            showImages('.star');
-    });
-  </script>
+    
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="files/uploads/favicon.png"/>
+    
+    <!-- DOCUMENT TITLE -->
+    <title>Amelio | Resmed</title>
 
 </head>
 
 <body>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <a class="navbar-brand navbar-center" href="index.html">
-        <div class="nav-title">TINA CHEN</div>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav flex-column ml-auto mt-2 mt-lg-0">
-          <li class="nav-item nav-item-stick-right ml-auto">
-            <a class="nav-link special_underline" href="index.html">Projects</a>
-          </li>
-          <li class="nav-item nav-item-stick-right ml-auto">
-            <a class="nav-link special_underline" href="assets/Resume_1211.pdf" target="_blank">Resume</a>
-          </li>
-          <li class="nav-item nav-item-stick-right ml-auto">
-            <a class="nav-link special_underline" href="about.html">About Me</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
 
-  <!-- Project Intro -->  
-  <div class="headers narrow1">
-    <img class="img-responsive" id="centerimg" src="assets/resmed_header.png" width="100%">
-  </div>
+<!-- PAGE LOADER -->
+<div id="page-loader" class="text-light show-logo">
+	<span class="loader-icon bullets-jump"><span></span><span></span><span></span></span>
+</div>
+<!-- PAGE LOADER -->
 
-  <!-- Project content -->
-  <div class="spacing narrow">
-    <div class="work">
-      <h2>RESMED</h2>
-      <p>Spring 2018<br>Interaction Design Studio II<br>In collaboration with: Alessendra Fleck, Dylan Smith, and Daniela Marmolejos</p>    
-    </div>     
 
-    <div class="work">
-      <h2>INTRODUCTION</h2>
-      <h1>AMELIO</h1>
-      <p>Amelio is a native mobile application that provides patients with support communities while empowering better patient and care giver experiences through capturing real emotional data.</p>
-    </div>
-    <div class="work">
-      <h1>How can we retain value for Resmed through patient data?</h1>
-      <p>50% of home care patients are not compliant to their therapy because of poor provider training and compliance monitoring. We kickstarted the discovery process by running a 2-day research sprint. The goal was to synthesize as much information about ResMed as we could manage.<br><br>Through background research, we found that individuals who suffer from sleep apnea are at risk to develop more severe conditions, such as high blood pressure, heart failure, and depression. It is essential for people with sleep apnea to seek treatment right away. But patients don’t comply, and Resmed can’t understand why.</p>
-    </div>
-  </div>
-
-  <!-- Product -->
-  <div class="research">
-    <div class="researchdiv">
-      <div class="work">
-        <h2>PRODUCT</h2>
-        <h1>Micro Interactions</h1>
-        <h3>Guerrilla Research</h3>
-        <p>Amelio helps the people who use ResMed devices feel like they have a community and that they’re being heard. Through writing about their experiences, both good and bad, on the forum platform, customers can support one another. For the respiratory therapist, they can use the data garnered from the forum to help improve the lives of their patients. ResMed can leverage that real emotional data to generate stronger insights to produce better customer experiences- and better customer experiences translate to better sales and higher quality products and services.</p>
-        <div class="work row">
-          <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
-            <img class="img-responsive star" src="assets/victor_view.gif" width="100%">
-          </div>        
-          <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 col-with-text">
-            <h2>Interactions</h2>
-            <h1>Respiratory Therapists</h1>
-            <p>Respiratory therapists are primarily in charge of installing devices for patients and answering any questions the patient might have on usage.  Thus, we created interactions that helped therapists get a holistic sense of the products and patients they are caring for.</p>
-          </div>
-        </div>
+<!-- PAGE CONTENT -->
+<div id="page-content">
+	
+	<!-- HEADER -->
+	<header id="header" class="header-left">        
+		<div class="header-inner clearfix">
+			
+            <!-- LOGO -->
+            <div id="logo" class="logo-left text-light">
+                <a href="index.html">
+                	<img id="dark-logo" src="files/uploads/logo-dark.png" alt="Logo Dark">
+                	<img id="light-logo" src="files/uploads/logo-light.png" alt="Logo Light">
+                </a>
+            </div>
+            
+            <!-- MAIN NAVIGATION -->
+            <div id="menu" class="clearfix">            
+                               	
+                <div class="menu-actions" class="hover-this">
+                	<div class="menu-toggle"><span class="hamburger"></span></div>
+                </div> <!-- END .menu-actions -->
+                
+                <div id="menu-inner" class="hover-this">
+                    <nav id="main-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a>
+                            </li>
+                            <li><a href="portfolio-grid-col3.html">Work</a>
+                            	<ul class="sub-menu">
+									<li><a href="index.html">UX/UI</a></li>
+									<!-- <li><a href="illustration.html">Illustration</a></li> -->
+									<li><a href="photo.html">Photography</a></li>
+								</ul>
+                            </li>
+                            <li><a href="about.html">About</a>
+                            </li>
+                            <li>
+                            	<a href="files/uploads/Resume_1211.pdf" target="_blank">Resume</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div><!-- END #menu-inner -->
+                <div class="cursor"></div>
+            </div><!-- END #menu -->
+            
+            <div id="header-widget" class="social hover-this">
+				<ul class="socialmedia-widget">
+					<li class="linkedin"><a href="https://www.linkedin.com/in/tina-chen-b3811a14a/" target="_blank"></a></li>
+					<li class="instagram"><a href="https://www.instagram.com/art.byrui/" target="_blank"></a></li>
+					<li class="fab"><a href="https://medium.com/@trchen_60055" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+				</ul>
+            </div>
+            
+		</div> <!-- END .header-inner -->
+		<span class="pseudo-close header-close"></span>
+	</header>
+	<!-- HEADER end -->
+    
+    
+    <!-- HERO & BODY -->
+	<div id="hero-and-body">
+   
+		<!-- HERO  -->
+		<section id="hero" class="hero-full text-light parallax-section" data-parallax-image="files/uploads/resmed_header.jpg">
         
-        <img class="img-responsive star work" src="assets/resmed_rt.png" width="100%">  
-        
-        <div class="work row">
-          <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
-            <h2>Interactions</h2>
-            <h1>Patient facing</h1>
-            <p>The micro-interactions for the patient were centered around the chat forum. We wanted to create a space that was interactive, inviting and enjoyable for the user.  We also wanted to help patients visualize the variety of conversations in this area to reduce the sense of isolation that they sometimes feel.</p>
-          </div>        
-          <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 col-with-text">
-            <img class="img-responsive star" src="assets/alex_view.gif" width="70%">
-          </div>
-        </div>
-        <img class="img-responsive star work" src="assets/resmed_pt.png" width="100%">
-      </div>
-    </div>     
-  </div>
+			<div id="page-title" class="wrapper-big">
+				<h1><strong>Amelio</strong> for Resmed</h1>
+				<div class="spacer-mini"></div>
+				<h5>Mobile Service Design</h5>
+			</div>
+   	
+    	</section>
+		<!-- HERO -->
 
-  <div class="spacing narrow">
-    <div class="work">
-      <h2>DISCOVERY & IDEATION</h2>
-      <h1>Connecting human needs to company goals</h1>
-      <p>With our understanding of the various stakeholders within the ResMed system, we clustered like-entities to organize our research, as well as to pry out some initial insights. From there we did several exercises to broaden our thinking and helped us explore more holistic solutions.</p>
-      <div class="row">
-        <div class="col-lg-6 img-container work">
-          <img class="img-responsive star" src="assets/stakeholdermapping-2.jpg" width="100%" height="auto">
-        </div>
-        <div class="col-lg-6 text-container star">
-          <p>Stakeholder Mapping<br><br>There is little communication or conversation between patients and ResMed.</p>
-        </div>
-      </div>
-      <div class="row">
-          <div class="col-lg-6 img-container work">
-            <img class="img-responsive star" src="assets/reverseassumptions-2.jpg" width="100%" height="auto">
-          </div>
-          <div class="col-lg-6 text-container star">
-            <p>Reverse stakeholder assumptions<br><br>We challenged our existing assumptions to generate out-of-the box design ideas.</p>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-lg-6 img-container star work">
-            <img class="img-responsive star" src="assets/twenty-2.jpg" width="100%" height="auto">
-          </div>
-          <div class="col-lg-6 text-container star">
-            <p>Generate 20 questions for problem framing<br><br>We listed out ideas that could serve a variety of stakeholders.</p>
-          </div>
-      </div>   
-      <div class="work">
-        <h1>Establishing value between domains</h1>
-        <p>Now that we established a basic stakeholder flow, it seemed logical that we also map out value between the domains represented by the delivery and usage of ResMed products.<br><br>Being able to highlight services and agreements also showed where the flow of value was lacking. For instance, there currently exists a weak co-creation value link between patients and the business side, through the basic service provided by RTs. One question we asked is:</p>
-        <h4>How could patients retain a stronger value by transferring their data to ResMed?</h4>  
-        <img class="img-responsive star work" src="assets/concept_digital.png" width="100%">
-      </div>
-      <div class="work">
-        <h1>Bubble Chat Forum</h1>
-        <p>We iterated on a variety of concepts for micro-interactions in order to discover the appropriate emotions, desirability, and transitions that we wanted to convey.<br><br>A fun micro-interaction we explored on was the manner in which people would click into, explore, and comment on various discussions in the forum platform. Although we ultimately did not end up using this iteration, it laid the basis for the next level of micro-interactions that we designed.
-</p>
-        <video width="100%" height="auto" controls>
-          <source src="assets/microinteraction_small.mov">
-        </video>
-      </div>   
-    </div>    
-  </div>
+		<!-- PAGEBODY -->
+		<section id="page-body">
+		
+			<div class="spacer-big"></div>
+			
+			<div class="wrapper-small">
+				<div class="column-section spaced-big clearfix">
+					<div class="column one-third">
+                		<img src="files/uploads/resmed_logo.png">
+						<div class="spacer-medium"></div>
+						<h4><strong>What I did</strong></h4>
+						<ul class="nolist">
+							<li>User Research</li>
+							<li>Problem Discovery</li>
+							<li>Stakeholder Mapping</li>
+							<li>Wireframing</li>
+							<li>Final UI Designs</li>
+							
+						</ul>
 
-  <div class="research">
-    <div class="researchdiv work">
-      <h1>Deliverable Data</h1>
-      <p>Amelio connect others through the forum platform, gathering data on human feelings and emotions. The respiratory therapist is then able to collect the emotional and empathetic side of data.<br><br>This promotes fostering a greater sense of understanding for the customer, thus allows Resmed to produce better insights and stronger products and services.</p>
-      <img class="img-responsive star work" src="assets/endgoal.png" width="100%">
-    </div>
-  </div>
-  <div class="spacing narrow work">
-    <h1>Amelio</h1>
-    <video width="100%" height="auto" controls>
-      <source src="assets/resmed_final.mov">
-    </video>
-  </div>
-  <div class="research">
-    <div class="researchdiv work">
-      <h2>Learnings</h2>
-      <h1>My Final Thoughts</h1>
-      <p>Through our process, we were able to dive into a topic none of us were familiar with. We explored the respiratory devices industry and how micro-interactions can enhance user value in the overall application.<br><br>Ultimately, I learned to:</p>
-      <ul>
-        <li>Design a service that involved understanding the gaps in the value flow between stakeholders. We needed to help patients feel like they are being treated and heard, while helping the company provide the best possible products.</li>
-        <li>Take ownership of the entire design process, with less hand-holding. We generate our own design plan and process, and carried it out with as much detail as possible.</li>
-        <li>Bring some magic to the table by using subtle, but delightful micro-interactions that goes a long way!</li>
-      </ul>
-    </div>
-  </div>
+					</div>
+					<div class="column two-third last-col">
+						<h3>How can we retain <strong>value</strong> for Resmed through patient data?</h3>
+						<p class="h5">50% of home care patients are not compliant to their therapy because of poor provider training and compliance monitoring. We kickstarted the discovery process by running a 2-day research sprint. The goal was to synthesize as much information about ResMed as we could manage.<br><br>Through background research, we found that individuals who suffer from sleep apnea are at risk to develop more severe conditions, such as high blood pressure, heart failure, and depression. It is essential for people with sleep apnea to seek treatment right away. But patients don’t comply, and Resmed can’t understand why.</p>
+					</div>
+				</div> <!-- END .column-section -->
+			</div><!-- END .wrapper -->
+			
+			<div class="spacer-big"></div>
+			
+			<img src="files/uploads/rm_designprocess.png" alt="SEO">
+			
+			<div class="spacer-big"></div>
+			
+			<div class="wrapper-small">
+				<h5 class="title-alt"><strong>Brief</strong></h5>
+				<div class="spacer-small"></div>
+				<h2>Amelio</h2>
+				<div class="spacer-small"></div>
+				<p class="h5"><strong>Amelio</strong> is a native mobile application that provides patients with support communities while empowering better patient and care giver experiences through capturing real emotional data.</p>
+				<div class="spacer-big"></div>
+				<h2>The Team</h2>
+				<div class="spacer-small"></div>
+				<div class="align-center">
+				<img src="files/uploads/rm_team.jpg" alt="SEO">
+				</div>
+				<div class="spacer-big"></div>
+				<h2>Microinteractions</h2>
+				<p>Amelio helps the people who use ResMed devices feel like they have a community and that they’re being heard. Through writing about their experiences, both good and bad, on the forum platform, customers can support one another. For the respiratory therapist, they can use the data garnered from the forum to help improve the lives of their patients. ResMed can leverage that real emotional data to generate stronger insights to produce better customer experiences- and better customer experiences translate to better sales and higher quality products and services.</p>
+				<div class="spacer-small"></div>
+				<div class="column-section spaced-big clearfix">
+					<div class="spacer-medium"></div>
+					<div class="column one-third">
+                		<img src="files/uploads/victor_view.gif">
 
-  <!-- footer -->
-  <div class="container">
-      <a href="index.html" class="special_underline">BACK TO PROJECTS</a>
-      <a href="adobe.html" class="special_underline" id="next">ADOBE</a>
-    <div class="footer">
-      <h4 id="footer_txt">© 2019 Designed and Handcoded with ♡ and 🎵 </h4> 
-    </div>
-    <div class="footer-icons">
-      <p>
-        <a href="https://www.linkedin.com/in/tina-chen-b3811a14a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://medium.com/@trchen_60055" target="_blank"><i class="fab fa-medium-m"></i></a>
-        <a href="https://www.instagram.com/art.byrui/" target=_blank"><i class="fas fa-palette"></i></a>
-        <a href="mailto:trchen@andrew.cmu.edu" target="_blank"><i class="fas fa-envelope"></i></a>
-      </p>
-    </div>
-  </div>
+					</div>
+					<div class="column two-third last-col">
+						<h3>Respiratory Therapists</h3>
+						<p class="h5">Respiratory therapists are primarily in charge of installing devices for patients and answering any questions the patient might have on usage.  Thus, we created interactions that helped therapists get a holistic sense of the products and patients they are caring for.</p>
+					</div>
+				</div> <!-- END .column-section -->
+
+			</div> <!-- END .wrapper -->
+			
+			<div class="spacer-big"></div>
+			
+			<img src="files/uploads/resmed_rt.png" alt="SEO">
+			
+			<div class="spacer-big"></div>
+			
+			<div class="wrapper-small">
+				<div class="column-section spaced-big clearfix">
+					<div class="spacer-medium"></div>
+					<div class="column one-third">
+                		<img src="files/uploads/alex_view.gif">
+
+					</div>
+					<div class="column two-third last-col">
+						<h3>Patient Facing</h3>
+						<p class="h5">The micro-interactions for the patient were centered around the chat forum.  We wanted to create a space that was interactive, inviting and enjoyable for the user.  We also wanted to help patients visualize the variety of conversations in this area to reduce the sense of isolation that they sometimes feel.</p>
+					</div>
+				</div> <!-- END .column-section -->				
+			</div> <!-- END .wrapper -->
+			<div class="spacer-big"></div>	
+			<img src="files/uploads/resmed_pt.png" alt="SEO">		
+			<div class="spacer-big"></div>	
+			
+			<div class="wrapper-small">
+				<h5 class="title-alt"><strong>Discover & Ideation</strong></h5>
+				<div class="spacer-small"></div>
+				<h2>Connecting human needs to company goals</h2>
+				<div class="spacer-small"></div>
+				<p class="h5">With our understanding of the various stakeholders within the ResMed system, we clustered like-entities to organize our research, as well as to pry out some initial insights. From there we did several exercises to broaden our thinking and helped us explore more holistic solutions.</p>
+
+				<div class="column-section spaced-big clearfix">
+					<div class="column two-third">
+                		<img src="files/uploads/stakeholdermapping-2.png">
+					</div>
+					<div class="column one-third last-col">
+						<h5>Stakeholder Mapping</h5>
+						<p>There is little communication or conversation between the patients and ResMed.</p>
+					</div>
+				</div> <!-- END .column-section -->	
+				<div class="column-section spaced-big clearfix">
+					<div class="column two-third">
+                		<img src="files/uploads/reverseassumptions-2.png">
+					</div>
+					<div class="column one-third last-col">
+						<h5>Reverse Stakeholder Assumptions</h5>
+						<p>We challenged our existing assumptions to generate out-of-the box design ideas.</p>
+					</div>
+				</div> <!-- END .column-section -->
+				<div class="column-section spaced-big clearfix">
+					<div class="column two-third">
+                		<img src="files/uploads/twenty-2.png">
+					</div>
+					<div class="column one-third last-col">
+						<h5>Generate 20 questions for problem framing</h5>
+						<p>List out ideas that could serve a variety of stakeholders.</p>
+					</div>
+				</div> <!-- END .column-section -->
+				
+				<div class="spacer-big"></div>
+
+				<h5 class="title-alt"><strong>Synthesis</strong></h5>
+				<div class="spacer-small"></div>
+				<h2>Establishing value between domains</h2>
+				<div class="spacer-small"></div>
+				<p>Now that we established a basic stakeholder flow, it seemed logical that we also map out value between the domains represented by the delivery and usage of ResMed products.<br><br>Being able to highlight services and agreements also showed where the flow of value was lacking. For instance, there currently exists a weak co-creation value link between patients and the business side, through the basic service provided by RTs. One question we asked is: </p>
+				<h3>How could patients retain a stronger value by transferring their data to ResMed?</h3>
+				<div class="spacer-medium"></div>
+				<div class="align-center">
+					<img src="files/uploads/concept_digital.png">
+				</div>
+				<div class="spacer-big"></div>
+				<h5 class="title-alt"><strong>Iterations</strong></h5>
+				<div class="spacer-small"></div>
+				<h2>Bubble Chat Forum</h2>
+				<div class="spacer-small"></div>
+				<p>We iterated on a variety of concepts for micro-interactions in order to discover the appropriate emotions, desirability, and transitions that we wanted to convey.<br><br>A fun micro-interaction we explored on was the manner in which people would click into, explore, and comment on various discussions in the forum platform. Although we ultimately did not end up using this iteration, it laid the basis for the next level of micro-interactions that we designed.</p>
+				<div class="spacer-small"></div>
+				<section id="hero" class="hero-auto text-light" style="background: url(files/uploads/bubblechat.jpg); background-size: cover; background-position: center center;">
+					<div id="page-title" class="align-center wrapper-small">
+						<a href="http://player.vimeo.com/video/367469224" class="sr-button-icon style-1 button-medium" data-rel="lightcase">
+							<i class="fa fa-play fa-normal" ></i>
+						</a>
+					</div>
+		    	</section>
+		    	<p>Created by the Alessendra Fleck</p>
+		    	<div class="spacer-big"></div>
+				<h5 class="title-alt"><strong>Conclusion</strong></h5>
+				<div class="spacer-small"></div>
+				<h2>Deliverable Data</h2>
+				<div class="spacer-small"></div>
+				<p>Amelio connect others through the forum platform, gathering data on human feelings and emotions. The respiratory therapist is then able to collect the emotional and empathetic side of data.<br><br>This promotes fostering a greater sense of understanding for the customer, thus allows Resmed to produce better insights and stronger products and services.</p>
+				<div class="spacer-small"></div>
+				<img src="files/uploads/endgoal.png" width="100%">
+				<div class="spacer-big"></div>
+				<h2>Product Video</h2>
+				<div class="spacer-small"></div>
+				<section id="hero" class="hero-auto text-light" style="background: url(files/uploads/resmedvideopic.png); background-size: cover; background-position: center center;">
+					<div id="page-title" class="align-center wrapper-small">
+						<a href="http://player.vimeo.com/video/367476810" class="sr-button-icon style-1 button-medium" data-rel="lightcase">
+							<i class="fa fa-play fa-normal" ></i>
+						</a>
+					</div>
+		    	</section>
+		    	<div class="spacer-big"></div>
+				<h5 class="title-alt"><strong>Learnings</strong></h5>
+				<div class="spacer-small"></div>
+				<h2>My Final Thoughts</h2>
+				<div class="spacer-small"></div>
+				<p>Through our process, we were able to dive into a topic none of us were familiar with. We explored the respiratory devices industry and how micro-interactions can enhance user value in the overall application.<br><br>Ultimately, I learned to:</p>
+				<ul>
+					<li>Design a service that involved understanding the gaps in the value flow between stakeholders. We needed to help patients feel like they are being treated and heard, while helping the company provide the best possible products.</li>
+					<li>Take ownership of the entire design process, with less hand-holding. We generate our own design plan and process, and carried it out with as much detail as possible.</li>
+					<li>Bring some magic to the table by using subtle, but delightful micro-interactions that goes a long way!</li>
+				</ul>
+				<div class="spacer-big"></div>
+
+				<div id="single-pagination" class="portfolio-pagination">
+					<ul class="pagination">
+						<li class="prev"><a href="index.html"><span class="text">Previous</span>
+							<svg class="arrow arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 35.35"><title>back-arrow</title><path d="M0,16.88a3,3,0,0,0,.16.94,1.51,1.51,0,0,0,.63.78l15,15a2.14,2.14,0,0,0,3.52.08,2.14,2.14,0,0,0-.08-3.52L8.59,19.38H57.5a2.5,2.5,0,1,0,0-5H8.59L19.22,3.59A2.14,2.14,0,0,0,19.3.08a2.14,2.14,0,0,0-3.52.08l-15,15a1.51,1.51,0,0,0-.62.78A3,3,0,0,0,0,16.88Z"></path></svg>
+						</a></li>
+						<li class="back"><a href="index.html"><span class="filter-icon"><span></span></span></a></li>
+						<li class="next "><a href="adobe.html"><span class="text">Next</span>
+							<svg class="arrow arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 35.35"><title>back-arrow</title><path d="M0,16.88a3,3,0,0,0,.16.94,1.51,1.51,0,0,0,.63.78l15,15a2.14,2.14,0,0,0,3.52.08,2.14,2.14,0,0,0-.08-3.52L8.59,19.38H57.5a2.5,2.5,0,1,0,0-5H8.59L19.22,3.59A2.14,2.14,0,0,0,19.3.08a2.14,2.14,0,0,0-3.52.08l-15,15a1.51,1.51,0,0,0-.62.78A3,3,0,0,0,0,16.88Z"></path></svg>
+						</a></li>
+					</ul>
+				</div>
+			</div> <!-- END .wrapper -->
+						
+		</section>
+		<!-- PAGEBODY -->
+    
+	</div>
+	<div class="cursor"></div>
+    <!-- HERO & BODY -->  
+           
+    <!-- FOOTER -->  
+    <footer id="footer">
+       	<div class="footer-inner wrapper-small align-center">
+			<small class="copyright">&copy; Tina Chen 2019 — Thanks to Spab Rice</small>
+        </div>   
+    </footer>
+    <!-- FOOTER -->
+    
+</div> <!-- END #page-content -->
+<!-- PAGE CONTENT -->
+
+<!-- SCRIPTS -->
+<script src="files/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="files/js/plugins.js"></script>
+<script type="text/javascript" src="files/js/jquery.lightcase.min.js"></script>
+<script type="text/javascript" src="files/js/jquery.backgroundparallax.min.js"></script>
+<script type="text/javascript" src="files/js/script.js"></script>
+<script>
+
+(function () {
+
+      const link = document.querySelectorAll('nav > .hover-this');
+      const cursor = document.querySelector('.cursor');
+
+      const animateit = function (e) {
+            const span = this.querySelector('span');
+            const { offsetX: x, offsetY: y } = e,
+            { offsetWidth: width, offsetHeight: height } = this,
+
+            move = 25,
+            xMove = x / width * (move * 2) - move,
+            yMove = y / height * (move * 2) - move;
+
+            span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+
+            if (e.type === 'mouseleave') span.style.transform = '';
+      };
+
+      const editCursor = e => {
+            const { clientX: x, clientY: y } = e;
+            cursor.style.left = x + 'px';
+            cursor.style.top = y + 'px';
+      };
+
+      link.forEach(b => b.addEventListener('mousemove', animateit));
+      link.forEach(b => b.addEventListener('mouseleave', animateit));
+      window.addEventListener('mousemove', editCursor);
+
+})();
+
+</script>
+<!-- SCRIPTS -->
 
 </body>
 </html>
