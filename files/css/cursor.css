@@ -1,0 +1,34 @@
+html, header {
+      margin: 0;
+      padding: 0;
+}
+
+.hover-this {
+      transition: all 0.5s ease;
+}
+
+.cursor {
+      pointer-events: none;
+      position: fixed;
+      padding: .5rem;
+      background-color: #fff;
+      border-color: #000000;
+      border-radius: 50%;
+      mix-blend-mode: difference;
+      transition: transform 0.5s ease;
+}
+
+.hover-this:hover ~ .cursor {
+      transform: translate(-50%, -50%) scale(8);
+      cursor: none;
+}
+
+@media(max-width: 900px) {
+
+      .hover-this {
+            width: 100%;
+            padding: 20px 0;
+            display: inline-block;
+      }
+}
+
