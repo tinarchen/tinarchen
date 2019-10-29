@@ -16,7 +16,6 @@
     <link rel="stylesheet" id="fontawesome-style-css" href="files/css/font-awesome.min.css" type="text/css" media="all" />
     <link rel="stylesheet" id="ionic-icons-style-css" href="files/css/ionicons.css" type="text/css" media="all" />
 	<link rel="stylesheet" id="responsive-css"  href="files/css/mqueries.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="files/css/cursor.css">
 	<!-- link to fontawesome-->
   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   	<link rel="stylesheet" id="lightcase-css" href="files/css/lightcase.css" type="text/css" media="all" />	
@@ -83,7 +82,6 @@
                         </ul>
                     </nav>
                 </div><!-- END #menu-inner -->
-                <div class="cursor"></div>
             </div><!-- END #menu -->
             
             <div id="header-widget" class="social hover-this">
@@ -275,7 +273,6 @@
 		<!-- PAGEBODY -->
     
 	</div>
-	<div class="cursor"></div>
     <!-- HERO & BODY -->  
            
     <!-- FOOTER -->  
@@ -295,40 +292,7 @@
 <script type="text/javascript" src="files/js/jquery.lightcase.min.js"></script>
 <script type="text/javascript" src="files/js/jquery.backgroundparallax.min.js"></script>
 <script type="text/javascript" src="files/js/script.js"></script>
-<script>
 
-(function () {
-
-      const link = document.querySelectorAll('nav > .hover-this');
-      const cursor = document.querySelector('.cursor');
-
-      const animateit = function (e) {
-            const span = this.querySelector('span');
-            const { offsetX: x, offsetY: y } = e,
-            { offsetWidth: width, offsetHeight: height } = this,
-
-            move = 25,
-            xMove = x / width * (move * 2) - move,
-            yMove = y / height * (move * 2) - move;
-
-            span.style.transform = `translate(${xMove}px, ${yMove}px)`;
-
-            if (e.type === 'mouseleave') span.style.transform = '';
-      };
-
-      const editCursor = e => {
-            const { clientX: x, clientY: y } = e;
-            cursor.style.left = x + 'px';
-            cursor.style.top = y + 'px';
-      };
-
-      link.forEach(b => b.addEventListener('mousemove', animateit));
-      link.forEach(b => b.addEventListener('mouseleave', animateit));
-      window.addEventListener('mousemove', editCursor);
-
-})();
-
-</script>
 <!-- SCRIPTS -->
 
 </body>
