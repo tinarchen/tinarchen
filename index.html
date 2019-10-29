@@ -21,7 +21,7 @@
     <link rel="stylesheet" id="ionic-icons-style-css" href="files/css/ionicons.css" type="text/css" media="all" />
 	<link rel="stylesheet" id="isotope-style-css"  href="files/css/isotope.css" type="text/css" media="all" />
 	<link rel="stylesheet" id="responsive-css"  href="files/css/mqueries.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="files/css/cursor.css">
+
 	<!-- link to fontawesome-->
   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">	
     
@@ -124,11 +124,11 @@
 
 				<div class="isotope-item portfolio-item advertising ">
 					<div class="portfolio-item-inner item-inner">
-						<a href="resmed.html" class="hover-this thumb-hover overlay-color scale text-light">
-							<img src="files/uploads/resmed.jpg" width="100%" alt="SEO">
+						<a href="har.html" class="hover-this thumb-hover overlay-color scale text-light">
+							<img src="files/uploads/har.jpg" width="100%" alt="SEO">
 							<div class="overlay-caption hidden">
-								<span class="caption-sub portfolio-category">Mobile Service</span>
-								<h4 class="caption-name portfolio-name">Amelio for Resmed</h4>
+								<span class="caption-sub portfolio-category">Responsive Web Design</span>
+								<h4 class="caption-name portfolio-name">Humane Animal Rescue</h4>
 							</div>
 						</a>
 					</div>
@@ -148,11 +148,11 @@
 
 				<div class="isotope-item portfolio-item branding ">
 					<div class="portfolio-item-inner item-inner">
-						<a href="agent.html" class="thumb-hover overlay-color scale text-light">
-							<img src="files/uploads/agent.jpg" alt="SEO">
+						<a href="resmed.html" class="thumb-hover overlay-color scale text-light">
+							<img src="files/uploads/resmed.jpg" alt="SEO">
 							<div class="overlay-caption hidden">
-								<span class="caption-sub portfolio-category">UX Research</span>
-								<h4 class="caption-name portfolio-name">Voice Agents in Homes</h4>
+								<span class="caption-sub portfolio-category">Mobile Service</span>
+								<h4 class="caption-name portfolio-name">Amelio for Resmed</h4>
 							</div>
 						</a>
 					</div>
@@ -160,11 +160,11 @@
 
 				<div class="isotope-item portfolio-item digital ">
 					<div class="portfolio-item-inner item-inner">
-						<a href="har.html" class="thumb-hover overlay-color scale text-light">
-							<img src="files/uploads/har.png" alt="SEO">
+						<a href="agent.html" class="thumb-hover overlay-color scale text-light">
+							<img src="files/uploads/agent.jpg" alt="SEO">
 							<div class="overlay-caption hidden">
-								<span class="caption-sub portfolio-category">Responsive Web Design</span>
-								<h4 class="caption-name portfolio-name">Humane Animal Rescue</h4>
+								<span class="caption-sub portfolio-category">AI Research</span>
+								<h4 class="caption-name portfolio-name">Voice Agents in Homes</h4>
 							</div>
 						</a>
 					</div>
@@ -231,40 +231,7 @@
 <script type="text/javascript" src="files/js/jquery.imagesloaded.min.js"></script>
 <script type="text/javascript" src="files/js/jquery.isotope.min.js"></script>
 <script type="text/javascript" src="files/js/script.js"></script>
-<script>
 
-(function () {
-
-      const link = document.querySelectorAll('nav > .hover-this');
-      const cursor = document.querySelector('.cursor');
-
-      const animateit = function (e) {
-            const span = this.querySelector('span');
-            const { offsetX: x, offsetY: y } = e,
-            { offsetWidth: width, offsetHeight: height } = this,
-
-            move = 25,
-            xMove = x / width * (move * 2) - move,
-            yMove = y / height * (move * 2) - move;
-
-            span.style.transform = `translate(${xMove}px, ${yMove}px)`;
-
-            if (e.type === 'mouseleave') span.style.transform = '';
-      };
-
-      const editCursor = e => {
-            const { clientX: x, clientY: y } = e;
-            cursor.style.left = x + 'px';
-            cursor.style.top = y + 'px';
-      };
-
-      link.forEach(b => b.addEventListener('mousemove', animateit));
-      link.forEach(b => b.addEventListener('mouseleave', animateit));
-      window.addEventListener('mousemove', editCursor);
-
-})();
-
-</script>
 
 <!-- SCRIPTS -->
 
