@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6,
 	font-weight: 200;
 	}
 	h1 i, h2 i, h3 i, h4 i, h5 i, h6 i, h1 em, h2 em, h3 em, h4 em, h5 em, h6 em { font-style: italic; }
-	h1 b, h2 b, h3 b, h4 b, h5 b, h6 b, h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong { font-weight: 700; }
+	h1 b, h2 b, h3 b, h4 b, h5 b, h6 b, h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong { font-weight: 600; }
 	h1, h2, h3, h4, h5, h6 { color: #000000; }
 	.text-light h1, .text-light h2, .text-light h3, .text-light h4, .text-light h5, .text-light h6,
 	h1.text-light, h2.text-light, h3.text-light, h4.text-light, h5.text-light, h6.text-light  { color: #ffffff; }
@@ -3701,4 +3701,36 @@ header #logo img { height: 80px; }
 	max-width: 22%;
 	text-align: left;
 	padding: 1rem;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
