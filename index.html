@@ -21,6 +21,7 @@
     <link rel="stylesheet" id="ionic-icons-style-css" href="files/css/ionicons.css" type="text/css" media="all" />
 	<link rel="stylesheet" id="isotope-style-css"  href="files/css/isotope.css" type="text/css" media="all" />
 	<link rel="stylesheet" id="responsive-css"  href="files/css/mqueries.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="files/css/cursor.css">
 
 	<!-- link to fontawesome-->
   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">	
@@ -84,7 +85,9 @@
                             </li>
                         </ul>
                     </nav>
+
                 </div><!-- END #menu-inner -->
+                <div class="cursor"></div> 
             </div><!-- END #menu -->
             
             <div id="header-widget" class="social hover-this">
@@ -94,7 +97,7 @@
 					<li class="fab"><a href="https://medium.com/@trchen_60055" target="_blank"><i class="fab fa-medium-m"></i></a></li>
 				</ul>
             </div>
-            
+        
 		</div> <!-- END .header-inner -->
 		<span class="pseudo-close header-close"></span>
 
@@ -109,11 +112,12 @@
 		    	<div class="over-title">
 		    		<div class="top-left">
 		    			<h2>Hi, I'm Tina—</h2>
-		    			<h3>I study Business and HCI at Carnegie Mellon.<br>  I am skilled in mobile/UI/web design, and<br> enhancing people’s experiences through technology.</strong></h3>
+		    			<h3>I am a creative self-starter,<br> skilled in user-centered interactions and an eye for detail.</strong></h3>
 		    		</div>
 		    	</div>
 		    </div>
 		  </section>
+		  <div class="cursor"></div> 
 		<!-- PAGEBODY -->
 		<section id="page-body" class="hover-this">
 
@@ -179,7 +183,7 @@
 					</div>
 				</div>
 
-				<div class="isotope-item portfolio-item digital ">
+				<div class="isotope-item portfolio-item digital">
 					<div class="portfolio-item-inner item-inner do-anim-modern">
 						<a href="aeo.html" class="thumb-hover overlay-color scale text-light">
 							<img src="files/uploads/aeo.jpg" alt="SEO">
@@ -191,32 +195,8 @@
 					</div>
 				</div>
 
-<!-- 				<div class="isotope-item portfolio-item branding ">
-					<div class="portfolio-item-inner item-inner do-anim-modern">
-						<a href="espn.html" class="thumb-hover overlay-color scale text-light">
-							<img src="files/uploads/espn.jpg" alt="SEO">
-							<div class="overlay-caption hidden">
-								<span class="caption-sub portfolio-category">UX/UI</span>
-								<h4 class="caption-name portfolio-name">ESPN Redesign</h4>
-							</div>
-						</a>
-					</div>
-				</div> -->
-
-<!-- 				<div class="isotope-item portfolio-item advertising ">
-					<div class="portfolio-item-inner item-inner do-anim-modern">
-						<a href="ra.html" class="thumb-hover overlay-color scale text-light">
-							<img src="files/uploads/ra.jpg" alt="SEO">
-							<div class="overlay-caption hidden">
-								<span class="caption-sub portfolio-category">Internship</span>
-								<h4 class="caption-name portfolio-name">Ready Artwork</h4>
-							</div>
-						</a>
-					</div>
-				</div> -->
 
 			</div> <!-- END grid -->
-
 		</section>
 		<!-- PAGEBODY -->
     
@@ -241,7 +221,38 @@
 <script type="text/javascript" src="files/js/jquery.isotope.min.js"></script>
 <script type="text/javascript" src="files/js/script.js"></script>
 <script type="text/javascript" src="files/js/jquery.backgroundparallax.min.js"></script>
+<script>
+	(function () {
 
+      const link = document.querySelectorAll('nav > .hover-this');
+      const cursor = document.querySelector('.cursor');
+
+      const animateit = function (e) {
+            const span = this.querySelector('span');
+            const { offsetX: x, offsetY: y } = e,
+            { offsetWidth: width, offsetHeight: height } = this,
+
+            move = 25,
+            xMove = x / width * (move * 2) - move,
+            yMove = y / height * (move * 2) - move;
+
+            span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+
+            if (e.type === 'mouseleave') span.style.transform = '';
+      };
+
+      const editCursor = e => {
+            const { clientX: x, clientY: y } = e;
+            cursor.style.left = x + 'px';
+            cursor.style.top = y + 'px';
+      };
+
+      link.forEach(b => b.addEventListener('mousemove', animateit));
+      link.forEach(b => b.addEventListener('mouseleave', animateit));
+      window.addEventListener('mousemove', editCursor);
+
+})();
+</script>
 
 
 <!-- SCRIPTS -->
